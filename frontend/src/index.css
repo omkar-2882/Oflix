@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html{
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: rgb(35 34 34);
+}
+
+.container{
+  width: 100%;
+  max-width: 1242px;
+  margin: 0 auto;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header.black-bg{
+  background-color: rgb(20, 20, 20);
+}
+
