@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "./netflixlogo.png";
+import logo from "./OFLIX.png";
 import "./Navbar.css";
 
 const Navbar = () => {
