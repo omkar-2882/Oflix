@@ -6,6 +6,7 @@ header{
     transition: background-color 0.3s ease-in-out;
     background-color: transparent;
     z-index: 10;
+    /* padding: 0 3vw; */
 }
 
 .header-container{
@@ -18,7 +19,7 @@ header{
 .left-cont{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 60%;
 }

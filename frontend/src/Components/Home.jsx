@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import MoviesSection from "./MoviesSection";
 import BannerSection from "./BannerSection";
+import Navbar from "./Navbar";
 
 const Home = () => {
 	const apikey = "a71d353b577171c711db8b02d2d984e4";
@@ -37,6 +38,7 @@ const Home = () => {
 
 	return (
 		<>
+			<Navbar/>
 			<BannerSection trendingMoviePath={apiPaths.fetchTrending} />
 			<div class="banner_fadeBottom"></div>
 			<div className="movies-container container">

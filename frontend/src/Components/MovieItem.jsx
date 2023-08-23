@@ -19,8 +19,8 @@ const MovieItem = (props) => {
         // setFclass("dshow");
     }
 
-    const handleMouseEnter = () => {
-        searchYoutubeVideo(props.movie.title);
+    const handleMouseEnter = async () => {
+        await searchYoutubeVideo(props.movie.title);
     };
 
     const handleMouseLeave = () => {
@@ -30,7 +30,7 @@ const MovieItem = (props) => {
     return (
         <>
             <div className="movie-item"
-                onMouseEnter={handleMouseEnter}
+                onMouseOver={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 >
                 <img

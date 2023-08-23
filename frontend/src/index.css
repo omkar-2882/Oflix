@@ -1,14 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
   display: none;
 }
 
-html{
+html {
   font-size: 16px;
 }
 
@@ -21,17 +21,33 @@ body {
   background-color: rgb(35 34 34);
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 1242px;
   margin: 0 auto;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-header.black-bg{
+header.black-bg {
   background-color: rgb(20, 20, 20);
 }
 
+@media (max-width: 1350px) {
+  .container {
+    width: 100%;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    padding: 0 5vw;
+  }
+}
+@media (max-width: 800px) {
+  .banner__overview {
+    width: 100% !important;
+    /* height: 25rem !important; */
+  }
+  
+}
