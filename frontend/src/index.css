@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
+  /* background-color: transparent; */
+  /* height: 100vh; */
 }
 
 html {
@@ -19,6 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   background-color: rgb(35 34 34);
+  font-size: 16px;
 }
 
 .container {
@@ -43,6 +46,9 @@ header.black-bg {
     margin: 0 auto;
     padding: 0 5vw;
   }
+}
+@media (max-width: 1024px){
+  
 }
 @media (max-width: 800px) {
   .banner__overview {

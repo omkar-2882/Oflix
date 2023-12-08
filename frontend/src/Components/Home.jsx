@@ -41,7 +41,7 @@ const Home = () => {
 			<Navbar/>
 			<BannerSection trendingMoviePath={apiPaths.fetchTrending} />
 			<div class="banner_fadeBottom"></div>
-			<div className="movies-container container">
+			<div className="movies-container">
 				{
 					categories.map((cat) => {
 						const moviesPath = apiPaths.fetchMovieList(cat.id)

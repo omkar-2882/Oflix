@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from '../firebase';
-import logo from "./logo.svg";
+import logo from "./oflixlogo.png";
 import './Login.css'
 
 const Login = () => {

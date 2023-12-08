@@ -1,0 +1,115 @@
+.rootProfile{
+    display: flex;
+    justify-content: center;
+}
+
+.profileSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    width: 40rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .5rem 1rem;
+}
+
+.pheading {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.profileSection > h1{
+    align-self: flex-start;
+}
+
+.profileCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.leftSec {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.leftSec img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.rightSec {
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    flex: 5;
+    gap: 1.5rem;
+}
+
+.userEmail {
+    background-color: grey;
+    padding: 1rem 1rem;
+}
+
+.rightSec hr {
+    border: 1px solid rgb(79, 79, 79);
+}
+
+.renewalDate {
+    color: lightgrey;
+}
+
+.allPlans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 0 .8rem;
+}
+
+.allPlans > .plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.plan > div > p{
+    color: lightgray;
+}
+
+.plan > div > p:nth-child(2){
+    font-size: 1rem;
+}
+
+.plan button {
+    padding: .5rem 1rem;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signoutbtn {
+    color: white;
+    background-color: #e50914;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribebtn {
+    background-color: grey !important;
+}

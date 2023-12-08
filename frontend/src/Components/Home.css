@@ -1,9 +1,10 @@
 .banner-section {
   top: 0px;
   /* background-image: url("https://image.tmdb.org/t/p/original//628Dep6AxEtDxjZoGP78TsOxYbK.jpg"); */
-  height: 98vh;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 50%;
   position: relative;
   /* padding: 0 1vw; */
 }
@@ -13,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   /* align-items: flex-start; */
-  /* padding: 0 3vw; */
+  padding: 0 1rem;
   padding-top: 7rem;
 }
 
@@ -72,7 +73,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
 }
@@ -82,12 +83,36 @@
   color: white;
 }
 
-.banner_fadeBottom{
-    height: 220px;
-    background: linear-gradient(180deg, transparent, rgba(30, 26, 26, 0.723), rgb(34 34 34));
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.banner_fadeBottom {
+  height: 14rem;
+  background: linear-gradient(180deg, transparent, rgba(30, 26, 26, 0.723), rgb(34 34 34));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
+
+@media (max-width: 1350px) {}
+
+@media (max-width: 1024px) {
+  html {
+    /* font-size: 12px; */
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+
+  .banner-section {
+    height: 50vh;
+  }
+}

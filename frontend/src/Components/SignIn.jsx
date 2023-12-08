@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Login from './Login';
-import logo from "./logo.svg";
+import logo from "./oflixlogo.png";
 import './Login.css'
 
 const SignIn = () => {

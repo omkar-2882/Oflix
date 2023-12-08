@@ -4,6 +4,7 @@ const MovieItem = (props) => {
     const [fclass, setFclass] = useState("")
     const [yturl, setYturl] = useState("")
     const imgEndpoint = props.imgEndpoint;
+
     const searchYoutubeVideo = async (query) => {
         fetch(props.searchOnYoutube(query))
             .then(res => res.json())
@@ -29,8 +30,8 @@ const MovieItem = (props) => {
     };
     return (
         <>
-            <div className="movie-item"
-                onMouseOver={handleMouseEnter}
+            <div id={props.movie.id} className="movie-item"
+                onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 >
                 <img

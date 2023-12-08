@@ -1,20 +1,25 @@
-/* .movies-container {
+.movies-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+  margin-left: 7%;
+  margin-top: 1.5rem;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
 
 .movies-section {
-  margin: 40px 0;
-  /* height: 6vh; */
+  /* margin: 20px 0; */
+  width: 100%;
+  /* height:100%; */
 }
 
 .movies-section-heading {
   display: flex;
   align-items: center;
   color: white;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.2;
   cursor: pointer;
@@ -39,12 +44,15 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   align-items: center;
-  overflow-x: scroll;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
   overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 .movie-item {
-  width: 250px;
+  width: 16rem;
   margin-right: 0.9rem;
   transition: all ease-in-out 0.1s;
   border-radius: .3rem;
@@ -52,7 +60,7 @@
 }
 
 .movie-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   z-index: 10;
 }
 

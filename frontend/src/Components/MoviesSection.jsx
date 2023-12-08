@@ -25,13 +25,14 @@ const MoviesSection = (props) => {
 		<>
 			<div className="movies-section">
 				<h2 className="movies-section-heading">
-					{props.category.name} <span className="explore-nudge">Explore All</span>
+					{props.category.name} 
+					{/* <span className="explore-nudge">Explore All</span> */}
 				</h2>
 				<div className="movies-row">
 					{
 						movies.map((movie) => {
 							return (
-								<MovieItem key={movie.id} movie={movie} imgEndpoint={imgEndpoint} searchOnYoutube={props.searchOnYoutube}/>
+								<MovieItem key={movie.id} movie={movie} imgEndpoint={imgEndpoint} searchOnYoutube={props.searchOnYoutube} />
 							)
 						})
 					}

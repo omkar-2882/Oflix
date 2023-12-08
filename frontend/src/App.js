@@ -7,38 +7,47 @@ import SignIn from './Components/SignIn';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useEffect } from 'react';
 import { auth } from './firebase';
+import { useDispatch, useSelector } from 'react-redux';
+import { login, logout } from './features/userSlice';
+import ProfileSection from './Components/ProfileSection';
 
 function App() {
-  const user = null;
+  const user = useSelector(state => state.user.user);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (userAuth) => {
-      if(userAuth){
-        console.log(userAuth);
+      if (userAuth) {
+        dispatch(login({
+          uid: userAuth.uid,
+          email: userAuth.email,
+        }))
       }
-      else{
-        // logged out
+      else {
+        dispatch(logout());
       }
     })
     return unsubscribe;
   }, []);
-  
+
   return (
     <>
       {/* <Navbar /> */}
-      {/* <Router>
+      <Router>
         {!user ? (
           <SignIn />
         ) : (
           <Switch>
+            <Route exact path="/profile">
+              <ProfileSection />
+            </Route>
             <Route exact path="/">
               <Home />
             </Route>
           </Switch>
         )}
-
-      </Router> */}
-      <Home/>
+      </Router>
+      {/* <Home/> */}
     </>
   );
 }

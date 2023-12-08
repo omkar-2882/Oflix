@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import logo from "./OFLIX.png";
+import logo from "./oflixlogo.png";
+import { useHistory } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-
+  const history = useHistory()
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,7 +25,9 @@ const Navbar = () => {
       <header className={headerClass}>
         <div className="header-container container">
           <div className="left-cont">
-            <img src={logo} alt="" />
+            <img 
+            onClick={() => {history.push("/")}}
+            src={logo} alt="" />
 
             <ul className="nav-list">
               {/* <li className="nav-item active">Home</li> */}
@@ -36,9 +39,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="right-cont">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bell"></i>
+            {/* <i class="fa-solid fa-magnifying-glass"></i> */}
+            {/* <i class="fa-solid fa-bell"></i> */}
             <img
+              onClick={() => {history.push("/profile")}}
               src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
               alt=""
             />
