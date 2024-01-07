@@ -42,21 +42,21 @@ const ProfileSection = () => {
                             <div className='allPlans'>
                                 <div className='plan'>
                                     <div>
-                                        <p>Netflix Standard</p>
+                                        <p>Oflix Standard</p>
                                         <p>1080p</p>
                                     </div>
                                     <button className='subscribebtn'>Subscribed</button>
                                 </div>
                                 {/* <div className='plan'>
                                     <div>
-                                        <p>Netflix Basic</p>
+                                        <p>Oflix Basic</p>
                                         <p>480p</p>
                                     </div>
                                     <button>Subscribe</button>
                                 </div>
                                 <div className='plan'>
                                     <div>
-                                        <p>Netflix Premium</p>
+                                        <p>Oflix Premium</p>
                                         <p>4K_HDR</p>
                                     </div>
                                     <button>Current Package</button>

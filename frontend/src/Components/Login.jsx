@@ -57,7 +57,7 @@ const Login = () => {
           <a href="#">Need help?</a>
         </div> */}
       </form>
-      <p>New to Netflix? <span href="#" onClick={register}>Sign up now</span></p>
+      <p>New to Oflix? <span href="#" onClick={register}>Sign up now</span></p>
       {/* <small>
         This page is protected by Google reCAPTCHA to ensure you're not a bot.
         <a href="#">Learn more.</a>
